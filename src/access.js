@@ -1,4 +1,5 @@
 module.exports = {
     token : "YourBotToken",
-    myId : "YourBotClientId"
+    myId : "YourBotClientId",
+    dbURI : "YourDatabaseURI"
 };

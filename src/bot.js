@@ -423,7 +423,7 @@ function handle(message) {
 
 // Init
 pg.defaults.ssl = true;
-const pool = new pg.Pool({connectionString : process.env.DATABASE_URL});
+const pool = new pg.Pool({connectionString : access.dbURI});
 
 client.on('ready', () => { console.log("Ciao mbare"); reload(client.guilds); });
 client.on('message', handle);
